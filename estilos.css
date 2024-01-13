@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --back_color: #796203;
+    --letter_color: #cee7e6;
+    --second_color: #bfc0c0;
+    --third_color: #7dc95e;
+    --forth_color: #7cdf64;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--back_color);
+    color: var(--letter_color);
+    padding: 0 10%;
+}
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+}
+
+.logo{
+    font-size:32px;
+    color: var(--letter_color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition:0.3s;
+}
+
+.logo span{
+    font-size: 45px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color:var(--letter_color);
+    text-decoration: none;
+    display:inline-flex;
+    justify-content: space-between;
+   margin-left: 35px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--third_color);
+}
+
+.home{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.home-content{
+    max-width: 50%;
+}
+
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color:var(--second_color);
+    line-height: 1.1;
+}
+
+.home-content p{
+    font-size: 16px;
+}
+
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.image{
+    transition: 0.3s;
+}
+
+.image img{
+    border-radius: 50%;
+    border:2px solid var(--letter_color);
+    z-index: 1;
+}
+
+.image:hover{
+    background-color: var(--back_color);
+    opacity: 0.7;
+}
+
+.image img::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--back_color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+
+
+.btn-box{
+    padding-top: 10px;
+}
+
+.btn-box a{
+    position: relative  ;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background-color: var(--third_color);
+    border: 2px solid var(--third_color);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px ;
+    font-weight: 600;
+    color: var(--letter_color);
+    z-index: 1;
+    overflow: hidden;
+}
+
+    
+.btn-box a:nth-child(1)::before{
+    background-color: transparent;
+}
+
+.btn-box a:nth-child(1){
+    background-color: var(--third_color);
+}
+
+.btn-box a:nth-child(2)::before{
+    background-color: transparent;
+}
+
+.btn-box a:nth-child(2){
+    background-color: var(--back_color);
+}
+
+.btn-box a:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--back_color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:nth-child(1):hover::before{
+    background-color: transparent;
+}
+
+
+.btn-box a:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--third_color);
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn-box a:nth-child(2):hover::before{
+    background-color: transparent;
+}
+
+.image{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 12.5%;
+}
+
+.home-sci{
+    position: absolute;
+    bottom: 60px;
+    left: 170px;
+    width:170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--letter_color);
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid var(--letter_color);
+    transition: 0.3s;
+}
+
+.home-sci a:hover{
+    background-color: var(--second_color);
+    color: var(--third_color)
+}
