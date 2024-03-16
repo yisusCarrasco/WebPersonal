@@ -485,5 +485,18 @@ span{
     .home-content{
         padding-top: 4rem;
     }
+    .home-content{
+        font-size: 15px;
+    }
+    .image img{
+        width: 200px;
+        height: 200px;
+    }
+    .home-sci{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: none;
+    }
 }
 
