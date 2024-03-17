@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="shortcut icon" href="images/Enrique Augusto-modified.jpg" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
@@ -14,10 +15,10 @@
             <a href="#" class="logo">Enrique<span>.</span></a>
             <nav class="navbar">
                 <a href="#" class="active">Inicio</a>
-                <a href="#">Sobre mí</a>
-                <a href="#">Portafolio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Contacto</a>
+                <a href="#about">Sobre mí</a>
+                <a href="#portafolio">Portafolio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
             </nav>
         </header>
     
@@ -27,8 +28,8 @@
                 <h3>Analista de datos, desarrollador web y junior machine learning</h3>
                 <p>Egresado de la carrera de Ingeniería Industrial de la Universidad Nacional de Piura y autodidacta.</p>
                 <div class="btn-box">
-                    <a href="#">Contratarme</a>
-                    <a href="#">Contactarme</a>
+                    <a href="#servicios">Contratarme</a>
+                    <a href="#contacto">Contactarme</a>
                 </div>
             </div>
             <!-- Part of me -->
@@ -38,9 +39,9 @@
         </section>
     
         <div class="home-sci">
-            <a href="#"><i class="bx bxl-facebook"></i></a>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
-            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://www.facebook.com/enri.agu" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="https://twitter.com/eacb2012p" target="_blank"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/enrique-carrasco-89779a149/" target="_blank"><i class="bx bxl-linkedin"></i></a>
         </div>
     </div>
 
@@ -74,7 +75,7 @@
 
 
     <!-- ------------------------- -->
-    <section class="portafolio">
+    <section class="portafolio" id="portafolio">
         <div class="container">
             <h2 class="heading_portafolio">Portafolio<span>.</span></h2>
             <div class="portafolio_content">
@@ -108,37 +109,38 @@
                         <img src="images/DataScience&DataAnalitics/1/imagen.jpg" alt="Cites">
                         <h3>Empleados empresa xyz</h3>                        
                         <div class="btn-boxe">
-                            <a href="#" target="_blank">Ver imagen</a>
+                            <a href="images/DataScience&DataAnalitics/1/imagen.jpg" target="_blank">Ver imagen</a>
                         </div>
                     </div>
                     <div class="proyecto">
                         <img src="images/DataScience&DataAnalitics/2/imagen.jpg" alt="Cites">
                         <h3>1000 Youtubers famosos </h3>
                         <div class="btn-boxe">
-                            <a href="#" target="_blank">Ver imagen</a>
+                            <a href="images/DataScience&DataAnalitics/2/imagen.jpg" target="_blank">Ver imagen</a>
                         </div>
                     </div>
                     <div class="proyecto">
                         <img src="images/DataScience&DataAnalitics/3/imagen.jpg" alt="Cites">
                         <h3>Redes neuronales recurrentes(LSTM y GRU) </h3>
                         <div class="btn-boxe">
-                            <a href="#" target="_blank">Ver imagen</a>
+                            <a href="images/DataScience&DataAnalitics/3/imagen.jpg" target="_blank">Ver imagen</a>
                         </div>
                     </div>
                     <div class="proyecto">
                         <img src="images/DataScience&DataAnalitics/4/imagen.jpg" alt="Cites">
                         <h3>Regresión lineal precio de casas</h3>
-                        <div class="btn-boxe">
-                            <a href="#" target="_blank">Ver imagen</a>
+                        <div class="btn-boxe" id="ver_imagen">
+                            <a href="images/DataScience&DataAnalitics/4/imagen.jpg" target="_blank">Ver imagen</a>
                         </div>
-                        
+
+
                     </div>  
                 </div>
             </div>
         </div>
 
     </section>
-    <section class="Servicios">
+    <section class="Servicios" id="servicios">
         <div class="container">
             <h2 class="heading_servicios">Servicios<span>.</span></h2>
             <div class="precios_contenido">
@@ -178,13 +180,14 @@
             </div>
         </div>
     </section>
-    <section class="Contacto">
+    <section class="Contacto" id="contacto">
         <div class="container">
             <h2 class="heading_contacto">Contacto<span>.</span></h2>
             <div class="about-content">
                 <h3>Número de teléfono</h3>
                 <p>+51 904313323</p>
-                
+                <h3>Correo electrónico</h3>
+                <p>eacb2012p@gmail.com</p>
             </div>
         </div>
     </section>
